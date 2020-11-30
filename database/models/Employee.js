@@ -6,6 +6,10 @@ const EmployeeSchema = new Schema({
   birthday: {type: Date, required: true},
   email: {type: String, required: true},
   department: {type: String, required: true},
+  sales: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Sale',
+  }]
 }, {timestamps: true});
 
 const Employee = mongoose.model('Employee', EmployeeSchema);
