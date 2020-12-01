@@ -1,9 +1,11 @@
+import React from 'react';
+import routes from './config/routes'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Let's get this started</h1>
+      { routes }
     </div>
   );
 }
