@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoginForm = () => {
   return (
-  <form class="form-signin">
+  <form class="form-signin" action="/">
     <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"/>
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <label for="inputEmail" class="sr-only">Email address</label>

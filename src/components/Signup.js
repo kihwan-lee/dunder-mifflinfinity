@@ -3,7 +3,7 @@ import React from 'react';
 const SignUp = () => {
   return (
   <div>
-    <form>
+    <form class="form-signup" action="/myProfile">
       <div className="form-row">
         <div className="form-group col-md-6">
             <label for="inputName4">Name</label>
