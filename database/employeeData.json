@@ -1,0 +1,20 @@
+{
+  "employees": [
+    {
+      "name": "Michael Scott",
+      "email": "michael.scott@dm.com",
+      "password": "bestboss",
+      "department": "sales",
+      "sales": [
+        "5fc5777a645e5ae62ac9ea48"
+      ]
+    },
+    {
+      "name": "Kevin Malone",
+      "email": "kevin.malone@dm.com",
+      "password": "bestaccountant",
+      "department": "audit",
+      "sales": []
+    }
+  ]
+}

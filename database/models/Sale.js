@@ -4,8 +4,7 @@ const Schema = mongoose.Schema;
 const SaleSchema = new Schema({
   employee: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Employee',
-    required: true
+    ref: 'Employee'
   },
   amountOfPaper: {type: Number, required: true},
   customer: {type: String, required: true},
