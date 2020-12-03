@@ -1,9 +1,9 @@
 const db = require("../models");
 
 const index = (req, res) => {
-  db.Employee.find({})
-  .then((foundEmployees) => {
-    res.json({employees: foundEmployees });
+  db.Sale.find({})
+  .then((foundSales) => {
+    res.json({sales: foundSales });
   });
 
   console.log('underneath database query');
@@ -11,23 +11,23 @@ const index = (req, res) => {
 };
 
 const show = (req, res) => {
-  db.Employee.findById(req.params.id)
-    .then((foundEmployees) => {
-      res.json({employees: foundEmployees });
+  db.Sale.findById(req.params.id)
+    .then((foundSales) => {
+      res.json({sales: foundSales });
     })
     .catch((err) => {
-      console.log('Error in employees.show:', err);
+      console.log('Error in sales.show:', err);
       res.json({Error: 'Unable to get data'});
     });
 };
 
 const create = (req, res) => {
-  db.Employee.create(req.body)
-    .then((savedEmployee) => {
-      res.json({ employee: savedEmployee });
+  db.Sale.create(req.body)
+    .then((savedSale) => {
+      res.json({ salee: savedSale });
     })
     .catch((err) => {
-      console.log('Error in employees.show:', err);
+      console.log('Error in sales.show:', err);
       res.json({Error: 'Unable to get data'});
     });
 };
@@ -35,23 +35,23 @@ const create = (req, res) => {
 
 
 const update = (req, res) => {
-  db.Employee.findByIdAndUpdate(
+  db.Sale.findByIdAndUpdate(
     req.params.id,
     req.body,
     { new: true },
-    (err, updatedEmployee) => {
-      if (err) console.log("Error in employees#update:", err);
+    (err, updatedSale) => {
+      if (err) console.log("Error in sales#update:", err);
 
-      res.send("Incomplete employees#update controller function");
+      res.send("Incomplete sales#update controller function");
     }
   );
 };
 
 const destroy = (req, res) => {
-  db.Employee.findByIdAndDelete(req.params.id, (err, deletedEmployee) => {
-    if (err) console.log("Error in employees#destroy:", err);
+  db.Sale.findByIdAndDelete(req.params.id, (err, deletedSale) => {
+    if (err) console.log("Error in sales#destroy:", err);
 
-    res.send("Incomplete employees#destroy controller function");
+    res.send("Incomplete sales#destroy controller function");
   });
 };
 

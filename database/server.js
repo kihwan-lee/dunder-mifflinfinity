@@ -18,6 +18,7 @@ app.use(express.json());
 // middleware - API routes
 app.use("/DunderMifflin/employees", routes.employees);
 app.use("/DunderMifflin/sales", routes.sales);
+app.use("/DunderMifflin/auth", routes.auth);
 
 
 // Listener

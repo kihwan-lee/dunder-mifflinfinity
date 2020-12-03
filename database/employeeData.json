@@ -4,16 +4,16 @@
       "name": "Michael Scott",
       "email": "michael.scott@dm.com",
       "password": "bestboss",
-      "department": "sales",
+      "department": "Sales",
       "sales": [
-        "5fc5777a645e5ae62ac9ea48"
+        "5fc93c1516b633580484b293"
       ]
     },
     {
       "name": "Kevin Malone",
       "email": "kevin.malone@dm.com",
       "password": "bestaccountant",
-      "department": "audit",
+      "department": "Accounting",
       "sales": []
     }
   ]

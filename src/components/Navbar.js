@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 const NavBar = (props) => {
   return (
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Logo</a>
+    <Link class="navbar-brand" to="/">Logo</Link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,10 +12,10 @@ const NavBar = (props) => {
     <div class="collapse navbar-collapse" id="navbarsExample04">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/myProfile">My Profile <span class="sr-only">(current)</span></a>
+          <Link class="nav-link" to="/myProfile">My Profile <span class="sr-only">(current)</span></Link>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/login">Sign Out <span class="sr-only">(current)</span></a>
+          <Link class="nav-link" to="/">Sign Out <span class="sr-only">(current)</span></Link>
         </li>
       </ul>
     </div>
