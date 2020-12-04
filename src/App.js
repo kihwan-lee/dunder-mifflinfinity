@@ -15,15 +15,7 @@ class App extends React.Component {
     user: {},
     sale: {}
   }
-  
-  
-  // componentDidMount() {
-  //   const userId = this.props.match.params.id;
-  //   Employee.getOne(userId)
-  //     .then((data) => {
-  //       this.setState({ user: data.user });
-  //     });
-  // }
+
 
   setUser = (user) => {
     this.setState({user})
