@@ -12,18 +12,6 @@ const index = (req, res) => {
     });
 };
 
-// RETURN AN EMPLOYEE BY ID
-// const show = (req, res) => {
-//   db.Employee.findById(req.params.id)
-//     .then((foundEmployee) => {
-//       res.json({ employee: foundEmployee });
-//     })
-//     .catch((err) => {
-//       console.log('Error in games.show:', err);
-//       res.json({ Error: 'Unable to get data' });
-//     });
-// };
-
 // CREATE A NEW EMPLOYEE IN DB
 const create = (req, res) => {
   db.Employee.create(req.body)
@@ -63,7 +51,6 @@ const destroy = (req, res) => {
 
 module.exports = {
   index,
-  // show,
   create,
   update,
   destroy,
