@@ -8,7 +8,7 @@ A company website that Dunder Mifflin employees can use to register sales made e
 - [User Stories](#user-stories)
 - [Wireframes](#wireframes)
 - [Data Models](#data-models)
-- [Milestones](#milestones)
+
 
 ## Scope
 
@@ -42,32 +42,34 @@ Employees can
 Employees will login or create account
 ![image](public/images/login.png)
 
-## Learn More
+### Registration
+New Employees will create an account in registration page
+![image](public/images/sign-up.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Home Page
+Once an employee is authenticated, they can now enter the company home page.
+![image](public/images/home.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Profile Page
+This will show the employee's profile, including their sales
+![image](public/images/profile.png)
 
-### Code Splitting
+### Record a Sale
+Employee can register a sale made. Will take in a customer name, amount of paper sold, and profit gained.
+![image](public/images/make-sale.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Data Models
 
-### Analyzing the Bundle Size
+### Employee
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- employeeId
+- name
+- email
+- password
+- department
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Sale
+- employeedId
+- customer 
+- amountOfPaper
+- profit
