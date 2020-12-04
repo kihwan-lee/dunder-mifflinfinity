@@ -36,16 +36,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Router>
-          <Route exact path='/' render={() => <Login setUser={this.setUser}/>} />
-          <Route path='/home' component={ Home } />
-          <Route path='/newEmployee' render={() => <NewEmployee  setUser={this.setUser}/>} />
-          <Route path='/myProfile' render={() => <MyProfile user={this.state.user} setUser={this.setUser} />  } />
-          <Route path='/editMyProfile' render={() => <UpdateProfile user={this.state.user} setUser={this.setUser} />  } />
-          <Route path='/makeSale' render={() => <MakeSale user={this.state.user} setUser={this.setUser} sale={this.state.sale} setSale={this.setSale} />  } />
+      <div>
+        <div className="App-background" />
+          <Router>
+            <Route exact path='/' render={() => <Login setUser={this.setUser}/>} />
+            <Route path='/home' component={ Home } />
+            <Route path='/newEmployee' render={() => <NewEmployee  setUser={this.setUser}/>} />
+            <Route path='/myProfile' render={() => <MyProfile user={this.state.user} setUser={this.setUser} />  } />
+            <Route path='/editMyProfile' render={() => <UpdateProfile user={this.state.user} setUser={this.setUser} />  } />
+            <Route path='/makeSale' render={() => <MakeSale user={this.state.user} setUser={this.setUser} sale={this.state.sale} setSale={this.setSale} />  } />
 
-        </Router>
+          </Router>
       </div>
     );
   }

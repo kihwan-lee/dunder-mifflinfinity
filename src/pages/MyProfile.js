@@ -16,7 +16,6 @@ const MyProfile = (props) => {
 
   return (
     <div>
-      <h1>My Profile</h1>
       <NavBar />
       <Card user={props.user}  /> 
       <SalesCard sale={props.user.sales} />

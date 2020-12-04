@@ -7,7 +7,6 @@ import HomePicture from '../components/HomePicture';
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
       <NavBar />
       <HomePicture />
       <BranchCard />

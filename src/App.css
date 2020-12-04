@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #373F51;
 }
 
 .App-link {
@@ -35,4 +24,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #58A4B0;
+  border-color: #58A4B0;
+}
+
+.App-background{
+  background-color: #d8dbe2;
+  /* Set rules to fill background */
+min-width: 1024px;
+/* Set up proportionate scaling */
+width: 100%;
+height: auto;
+/* Set up positioning */
+position: fixed;
+top: 0;
+left: 0;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
 }
