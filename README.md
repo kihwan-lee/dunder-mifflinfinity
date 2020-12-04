@@ -20,6 +20,7 @@ The final objective is to build an app where employees can login or register int
 - Express
 - React
 - Node
+- Bootstrap
 
 
 ## User Stories
