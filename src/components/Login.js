@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.jpg';
 
 
 const url = "http://localhost:4000/DunderMifflin/auth/login"
@@ -37,7 +38,7 @@ const LoginForm = (props) => {
 
   return (
   <form class="form-signin" >
-    <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"/>
+    <img class="mb-4" src={logo} alt="" width="72" height="72"/>
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <label for="inputEmail" class="sr-only">Email address</label>
     <input 

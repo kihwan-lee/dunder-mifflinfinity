@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import SalesModel from '../models/Sales'
 
 const RecordSale = (props) => {
@@ -56,6 +56,8 @@ const RecordSale = (props) => {
           </div>
         </div>
         <button type="submit" className="btn btn-primary">Make A Sale</button>
+        <Link to="/myProfile" type="submit" className="btn btn-primary">Go Back</Link>
+
       </form>
     </div>
   )
