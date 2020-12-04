@@ -39,9 +39,15 @@
   background-color: #58A4B0;
   border-color: #58A4B0;
 }
+.btn-primary:hover {
+  color: #fff;
+  background-color: #373F51;
+  border-color: #373F51;
+}
+
 
 .App-background{
-  background-color: #d8dbe2;
+  background-color: #A9BCD0;
   /* Set rules to fill background */
 min-width: 1024px;
 /* Set up proportionate scaling */
@@ -56,4 +62,12 @@ left: 0;
 .logo {
   width: 40px;
   height: auto;
+}
+
+.form-signup {
+  padding-top: 100px;
+}
+
+.navbar {
+  color: #1B1B1E;
 }
