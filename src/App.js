@@ -8,6 +8,7 @@ import Login from './pages/LoginPage';
 import NewEmployee from './pages/NewEmployee';
 import MyProfile from './pages/MyProfile';
 import UpdateProfile from './pages/EditProfilePage';
+import MakeSale from './pages/MakeSale';
 
 class App extends React.Component {
   state = {
@@ -27,6 +28,10 @@ class App extends React.Component {
   setUser = (user) => {
     this.setState({user})
   }
+
+  setSale = (sale) => {
+    this.setState({sale})
+  }
   
 
   render() {
@@ -38,6 +43,8 @@ class App extends React.Component {
           <Route path='/newEmployee' render={() => <NewEmployee  setUser={this.setUser}/>} />
           <Route path='/myProfile' render={() => <MyProfile user={this.state.user} setUser={this.setUser} />  } />
           <Route path='/editMyProfile' render={() => <UpdateProfile user={this.state.user} setUser={this.setUser} />  } />
+          <Route path='/makeSale' render={() => <MakeSale user={this.state.user} setUser={this.setUser} sale={this.state.sale} setSale={this.setSale} />  } />
+
         </Router>
       </div>
     );

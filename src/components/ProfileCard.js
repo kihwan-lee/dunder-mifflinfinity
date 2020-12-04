@@ -8,12 +8,12 @@ const Card = (props) => (
       <div className="card-body">
       <h5 className="card-title">{props.user.name}</h5>
         <p className="card-text">Department: {props.user.department}</p>
-        <p className="card-text">Sales Made: {props.user.sales.length} </p>
+        {/* <p className="card-text">Sales Made: {props.user.sales.length} </p> */}
         <div className="d-flex justify-content-between align-items-center">
           <div className="btn-group">
             <Link to= "/editMyProfile" className="btn btn-primary float-right">Edit Profile
             </Link>
-            <Link to="/"className="btn btn-primary float-right">Record a Sale
+            <Link to="/makeSale"className="btn btn-primary float-right">Record a Sale
             </Link>
           </div>
         </div>

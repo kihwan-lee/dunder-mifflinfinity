@@ -21,16 +21,33 @@ const show = (req, res) => {
     });
 };
 
+// const create = (req, res) => {
+//   db.Sale.create(req.body)
+//     .then((savedSale) => {
+//       res.json({ sale: savedSale });
+//     })
+//     .catch((err) => {
+//       console.log('Error in sales.show:', err);
+//       res.json({Error: 'Unable to get data'});
+//     });
+// };
+
 const create = (req, res) => {
   db.Sale.create(req.body)
-    .then((savedSale) => {
-      res.json({ salee: savedSale });
-    })
+    .then((newSale) => {
+      db.Employee.findById(req.body.employee, (err, foundEmployee) => {
+        if (err) return console.log(err);
+  
+        foundEmployee.sales.push(newSale._id);
+        foundEmployee.save((err, savedEmployee) => {
+          if (err) return console.log(err);
+        })
+      })
     .catch((err) => {
-      console.log('Error in sales.show:', err);
       res.json({Error: 'Unable to get data'});
-    });
-};
+    })
+  })
+}
 
 
 

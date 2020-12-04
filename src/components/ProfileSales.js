@@ -7,7 +7,7 @@ const SalesCard = (props) => (
       {/* <img src={`https://robohash.org/${props.contact.name}.png`} className="card-img-top" alt="Jane Doe" width="100" /> */}
       <div className="card-body">
       <h5 className="card-title">Sales</h5>
-        {/* <p className="card-text">{props.user.sales.customer}</p> */}
+        <p className="card-text">{props.sales}</p>
       </div>
     </div>
   </div>
