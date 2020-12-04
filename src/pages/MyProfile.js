@@ -7,6 +7,7 @@ import SalesCard from '../components/ProfileSales';
 
 const MyProfile = (props) => {
   // let [ employees, setEmployees ] = useState({})
+  // const employeeId = (props.match.url.split('/')[2])
 
 
   // useEffect(() => {
@@ -20,12 +21,15 @@ const MyProfile = (props) => {
   if (!props.user) {
     return <Redirect to='/' />
   }
+  console.log(props)
+
+
 
   return (
     <div>
       <h1>My Profile</h1>
       <NavBar />
-      <Card user={props.user} />
+      <Card user={props.user} /> 
       <SalesCard sale={props.user.sales} />
     </div>
   );
