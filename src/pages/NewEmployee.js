@@ -1,11 +1,11 @@
 import React from 'react';
 import SignUp from '../components/Signup';
 
-const NewEmployee = () => {
+const NewEmployee = (props) => {
   return (
     <div>
       <h1>New Employee</h1>
-      <SignUp />
+      <SignUp  setUser={props.setUser} />
 
     </div>
   );

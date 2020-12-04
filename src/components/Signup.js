@@ -38,6 +38,7 @@ const SignUp = (props) => {
     EmployeeModel.create(user)
       .then((res) => {
       console.log(res)
+      props.setUser(res.employee)
       history.push(`myProfile/${res.employee._id}`);
       });
   }
@@ -45,7 +46,7 @@ const SignUp = (props) => {
 
     return (
     <div>
-      <form class="form-signup" onSubmit={handleFormSubmit} >
+      <form class="form-signup" >
         <div className="form-row">
           <div className="form-group col-md-6">
               <label for="inputName4">Name</label>
@@ -66,7 +67,7 @@ const SignUp = (props) => {
             <input type="password" className="form-control" id="inputPassword4" placeholder="Password" onChange={passwordChange}/>
           </div>
         </div>
-        <button type="submit" className="btn btn-primary">Make An Account</button>
+        <button  onClick={handleFormSubmit} type="submit" className="btn btn-primary">Make An Account</button>
       </form>
     </div>
     )
