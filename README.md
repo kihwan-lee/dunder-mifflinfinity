@@ -40,7 +40,7 @@ Employees can
 ### Login
 
 Employees will login or create account
-![image](src/images/login.png)
+![image](src/images/log-in.png)
 
 ### Registration
 New Employees will create an account in registration page
@@ -48,11 +48,11 @@ New Employees will create an account in registration page
 
 ### Home Page
 Once an employee is authenticated, they can now enter the company home page.
-![image](src/images/home.png)
+![image](src/images/home-page.png)
 
 ### Profile Page
 This will show the employee's profile, including their sales
-![image](src/images/profile.png)
+![image](src/images/profile-page.png)
 
 ### Record a Sale
 Employee can register a sale made. Will take in a customer name, amount of paper sold, and profit gained.
