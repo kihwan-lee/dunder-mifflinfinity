@@ -9,7 +9,11 @@ const EmployeeSchema = new Schema({
   sales: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Sale',
-  }]
+  }],
+  branch: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Branch'
+  }
 }, {timestamps: true});
 
 const Employee = mongoose.model('Employee', EmployeeSchema);

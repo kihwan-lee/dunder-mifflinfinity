@@ -1,20 +1,44 @@
 {
-  "employees": [
+  "employees" : [
     {
       "name": "Michael Scott",
-      "email": "michael.scott@dm.com",
-      "password": "bestboss",
+      "email": "ms@dm.com",
+      "password": "ms",
       "department": "Sales",
-      "sales": [
-        "5fc93c1516b633580484b293"
-      ]
+      "sales": ["5ff68c1a0682435745beed07"],
+      "branch": "5ff68944c6b7dd5584583539"
+    },
+    {
+      "name": "Dwight Schrute",
+      "email": "ds@dm.com",
+      "password": "ds",
+      "department": "Sales",
+      "sales": [],
+      "branch": "5ff68944c6b7dd5584583539"
+    },
+    {
+      "name": "Jim Halpert",
+      "email": "jh@dm.com",
+      "password": "jh",
+      "department": "Sales",
+      "sales": [],
+      "branch": "5ff68944c6b7dd5584583539"
     },
     {
       "name": "Kevin Malone",
-      "email": "kevin.malone@dm.com",
-      "password": "bestaccountant",
+      "email": "km@dm.com",
+      "password": "km",
       "department": "Accounting",
-      "sales": []
+      "sales": [],
+      "branch": "5ff68944c6b7dd5584583539"
+    },
+    {
+      "name": "Kelly Kapur",
+      "email": "kk@dm.com",
+      "password": "kk",
+      "department": "Customer Service",
+      "sales": [],
+      "branch": "5ff68944c6b7dd5584583539"
     }
   ]
 }

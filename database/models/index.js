@@ -17,6 +17,7 @@ mongoose
 
   module.exports = {
     Employee: require('./Employee'),
-    Sale: require('./Sale')
+    Sale: require('./Sale'),
+    Branch: require('./Branch')
   };
   
