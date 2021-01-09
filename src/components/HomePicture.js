@@ -3,7 +3,7 @@ import paper1 from '../images/paper.jpg';
 
 const HomePicture = () => {
   return (
-    <img src={paper1} alt="Paper"/>
+    <img src={paper1} className="paper" alt="Paper"/>
   )
 };
 

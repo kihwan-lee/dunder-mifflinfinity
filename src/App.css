@@ -81,3 +81,19 @@ left: 0;
   justify-content: center;
   margin: auto;
 }
+
+.welcome {
+  background: url(./images/paper.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 0%;
+}

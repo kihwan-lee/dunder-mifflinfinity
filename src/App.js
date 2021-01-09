@@ -37,7 +37,6 @@ class App extends React.Component {
             <Route path='/myProfile' render={() => <MyProfile user={this.state.user} setUser={this.setUser} />  } />
             <Route path='/editMyProfile' render={() => <UpdateProfile user={this.state.user} setUser={this.setUser} />  } />
             <Route path='/makeSale' render={() => <MakeSale user={this.state.user} setUser={this.setUser} sale={this.state.sale} setSale={this.setSale} />  } />
-
           </Router>
       </div>
     );

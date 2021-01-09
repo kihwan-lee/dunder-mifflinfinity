@@ -55,7 +55,7 @@ const RecordSale = (props) => {
             <input type="number" className="form-control" id="inputProfit4" placeholder="Profit" onChange={profitChange}/>
           </div>
         </div>
-        <button type="submit" className="btn btn-primary">Make A Sale</button>
+        <Link to="/myProfile" type="submit" className="btn btn-primary">Make A Sale</Link>
         <Link to="/myProfile" type="submit" className="btn btn-primary">Go Back</Link>
 
       </form>

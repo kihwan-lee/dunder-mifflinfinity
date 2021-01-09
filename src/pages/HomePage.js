@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <NavBar />
-      <HomePicture />
+      <h1 className="welcome" style={{fontWeight: 900}}>Dunder Mifflinfinity</h1>
       <BranchCard />
       <BranchCard />
       <BranchCard />
