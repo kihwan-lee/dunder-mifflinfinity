@@ -97,3 +97,21 @@ left: 0;
   font-weight: 900;
   margin-bottom: 0%;
 }
+
+.row {
+  margin: 0%;
+}
+
+.office-location-column {
+  float: left;
+  width: 33.33%;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
