@@ -5,7 +5,7 @@ const SalesCard = (props) => (
     <div className="card mb-4 shadow-sm">
       <div className="card-body">
       <h5 className="card-title">Sales</h5>
-        <p className="card-text">{props.sales}</p>
+        <p className="card-text">{props.user.sales[0]}</p>
       </div>
     </div>
   </div>

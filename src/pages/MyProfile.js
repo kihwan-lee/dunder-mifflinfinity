@@ -18,7 +18,7 @@ const MyProfile = (props) => {
     <div>
       <NavBar />
       <Card user={props.user}  /> 
-      <SalesCard sale={props.user.sales} />
+      <SalesCard user={props.user} />
     </div>
   );
 }
