@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import NavBar from '../components/Navbar';
 import Card from '../components/ProfileCard';
 import SalesCard from '../components/ProfileSales';
+import QuotesCard from '../components/QuotesCard';
 
 
 const MyProfile = (props) => {
@@ -19,6 +20,7 @@ const MyProfile = (props) => {
       <NavBar />
       <Card user={props.user}  /> 
       <SalesCard user={props.user} />
+      <QuotesCard />
     </div>
   );
 }
