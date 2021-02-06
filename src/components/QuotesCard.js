@@ -1,20 +1,15 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 
 const QuotesCard = () => {
   return (
-  <Carousel>
-    <Carousel.Item>
-      <p>Quote</p>
-    </Carousel.Item>
-    <Carousel.Item>
-      <p>Another Quote</p>
-    </Carousel.Item>
-    <Carousel.Item>
-      <p>Another Another Quote</p>
-    </Carousel.Item>
-</Carousel>
+  <div className="col-md-4">
+    <div className="card mb-4 shadow-sm">
+      <div className="card-body">
+        <h3 className="card-title"><strong>Quote</strong></h3>
+      </div>
+    </div>
+  </div>
   )
-}
+};
 
 export default QuotesCard;

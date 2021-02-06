@@ -125,3 +125,7 @@ left: 0;
   backface-visibility: hidden;
   transition: transform .6s ease-in-out;
 }
+
+.h5 {
+  font-weight: bolder;
+}
